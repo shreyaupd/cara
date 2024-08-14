@@ -149,7 +149,56 @@ button {
 #featuredproduct{
   margin: 0px;
   padding: 0px;
-  background-color: rgba(167, 205, 181, 0.299);
-  height: 800px;
+  background-color:#ece9df;
+}
+#featuredproduct .pro-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#featuredproduct .pro{
+  margin: 80px 10px;
+  width: 30%;
+  min-width:250px;
+  padding: 40px 12px;
+  border: none;
+  background-color: hsl(180, 7%, 97%);
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  cursor: pointer;
+  transition: 0.45s ease-in-out;
+  position:relative;
+}
+#featuredproduct .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  transform: translateY(-9px);
+}
+#featuredproduct .pro img{
   width: 100%;
+  border-radius: 1px;
+}
+#featuredproduct .pro {
+  margin-bottom: 0px;
+  line-height: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+#featuredproduct .pro .des h4{
+color: rgb(14, 113, 9);
+}
+#featuredproduct .pro .des .star{
+  color: rgb(237, 227, 45);
+}
+#featuredproduct .pro .cart{
+  width: 70px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e5f3c5;
+  color: black;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
