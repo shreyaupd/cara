@@ -209,3 +209,43 @@ color: rgb(14, 113, 9);
   bottom: 20px;
   right: 10px;
 }
+#belowf{
+  margin-top: 10px;
+  background: url(wa.jpg);
+  height: 400px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#belowf .belowit{
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3;
+}
+#belowf .belowit h2 {
+margin-bottom: 20px;
+}
+#belowf .belowit button {
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 200px;
+  min-height: 60px;
+  font-size: 22px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 2px solid rgb(176, 198, 180);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+#belowf .belowit button:hover {
+  background-color: rgb(220, 233, 220);
+  transform: translateY(-5px);
+}
