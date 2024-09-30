@@ -140,75 +140,7 @@ button {
   color: rgb(78, 61, 7);
   margin: 0px 50px;
 }
-#featuredproduct h1{
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#featuredproduct h2{
-  font-size: 50px;
-  color: #ebbd84;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#featuredproduct{
-  margin: 0px;
-  padding: 0px;
-  background-color:#ece9df;
-}
-#featuredproduct .pro-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#featuredproduct .pro{
-  margin: 80px 10px;
-  width: 30%;
-  min-width:250px;
-  padding: 40px 12px;
-  border: none;
-  background-color: hsl(180, 7%, 97%);
-  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
-  cursor: pointer;
-  transition: 0.45s ease-in-out;
-  position:relative;
-}
-#featuredproduct .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
-  transform: translateY(-9px);
-}
-#featuredproduct .pro img{
-  width: 100%;
-  border-radius: 1px;
-}
-#featuredproduct .pro {
-  margin-bottom: 0px;
-  line-height: 25px;
-  font-size: 20px;
-  text-align: center;
-}
-#featuredproduct .pro .des h4{
-color: rgb(14, 113, 9);
-}
-#featuredproduct .pro .des .star{
-  color: rgb(237, 227, 45);
-}
-#featuredproduct .pro .cart{
-  width: 70px;
-  height: 50px;
-  line-height: 40px;
-  border-radius: 50px;
-  background-color: #e5f3c5;
-  color: black;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-}
+
 #belowf{
   margin-top: 10px;
   background: url(wa.jpg);
@@ -249,3 +181,78 @@ margin-bottom: 20px;
   background-color: rgb(220, 233, 220);
   transform: translateY(-5px);
 }
+#jewelry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.jewelry-item {
+  position: relative; /* For positioning purposes */
+  overflow: hidden; /* Ensures content does not overflow */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  height: 200px; /* Fixed height for each item */
+}
+
+.jewelry-item img {
+  width: 100%; /* Make the image take the full width */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Cover the area, maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.jewelry-item img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+#myjewl{
+  background-color: rgb(251, 241, 230); 
+  background-size: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+#myjewl h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+#category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+  justify-items: center; /* Center items within each grid cell */
+  align-items: center; /* Center items vertically */
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align items */
+  background-color: white; /* Background color for each category item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden; /* Ensure rounded corners are applied to child elements */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.category-item img {
+  width: 100%; /* Make the image take the full width */
+  height: auto; /* Allow height to scale proportionally */
+  object-fit: cover; /* Cover the area, maintain aspect ratio */
+}
+
+.category-item h4 {
+  margin: 10px 0; /* Spacing between image and text */
+  font-size: 20px; /* Font size for category titles */
+}
+
+.category-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+
