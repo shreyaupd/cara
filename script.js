@@ -1,4 +1,4 @@
-const accessKey = 'qeZXia_hV-e0jTVP6VosYPiKBTXZGk_PiMesFpFcRpA'; // Replace with your Unsplash access 
+const accessKey = 'qeZXia_hV-e0jTVP6VosYPiKBTXZGk_PiMesFpFcRpA'; // Make sure to put your API key here
 const jewelryGrid = document.getElementById('jewelry-grid');
 const localStorageKey = 'jewelryImages'; // Key for localStorage
 
@@ -45,3 +45,15 @@ function displayImages(data) {
 
 // Call the function to fetch and display images
 fetchRandomJewelryImages();
+let tl=gsap.timeline()
+tl.from("#header img",{
+    y:-30,
+    opacity:0,
+    duration:0.7,
+    delay:1,
+})
+tl.from("#navbar li",{
+    y:-30,
+    opacity:0,
+    stagger:0.5
+})
