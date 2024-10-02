@@ -140,54 +140,84 @@ button {
   color: rgb(78, 61, 7);
   margin: 0px 50px;
 }
-
-#belowf{
-  margin-top: 10px;
-  background: url(wa.jpg);
-  height: 400px;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#belowf .belowit{
-  padding: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 3;
-}
-#belowf .belowit h2 {
-margin-bottom: 20px;
-}
-#belowf .belowit button {
-  margin-top: 30px;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 200px;
-  min-height: 60px;
-  font-size: 22px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 2px solid rgb(176, 198, 180);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-
-#belowf .belowit button:hover {
-  background-color: rgb(220, 233, 220);
-  transform: translateY(-5px);
-}
 #jewelry-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 10px; /* Space between grid items */
   padding: 20px; /* Padding around the grid */
+  padding-bottom: 0px;
+}
+#belowf{
+  margin-top: 0px;
+  padding-top: 0px;
+  height:700px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+#feedback{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#midimg {
+  margin-top: -230px;
+  margin-bottom: 0px; /* Removed excess space below the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#midimg img {
+  height: 500px;
+}
+
+#fromcostomer {
+  margin-top: 50px; /* Reduced this to bring the text closer */
+  margin-left: 30px;
+}
+
+#fromcostomer h2 {
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#fromcostomer p {
+  padding: 10px;
+  line-height: 26px;
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#costomer {
+  position: relative;
+  top: -500px; /* Adjusted to position correctly relative to #midimg */
+  margin-right: 60px;
+  margin-left: auto;
+  width: 300px;
+  text-align: right;
+  margin-bottom: 0px; /* Ensures no extra space below the customer section */
+}
+
+#costomer p {
+  padding: 10px;
+  line-height: 26px;
+  color: #465b52;
+}
+
+#costomer h2 {
+  margin: 0px;
+  color: #222;
+}
+
+#costomer h4 {
+  margin: 0px;
+  color: #222;
+  margin-right: 120px;
+}
 .jewelry-item {
   position: relative; /* For positioning purposes */
   overflow: hidden; /* Ensures content does not overflow */
@@ -208,7 +238,7 @@ margin-bottom: 20px;
   transform: scale(1.05); /* Zoom effect on hover */
 }
 #myjewl{
-  background-color: rgb(251, 241, 230); 
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
   background-size: 100%;
  background-position: center;
  background-repeat: no-repeat;
@@ -255,4 +285,84 @@ margin-bottom: 20px;
   transform: scale(1.05); /* Zoom effect on hover */
 }
 
+
+.footer {
+  width: 100%;
+  background: #10182F;
+  border-radius: 6px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover  {
+  color: #fff;
+}
 
