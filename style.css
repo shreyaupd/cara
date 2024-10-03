@@ -111,30 +111,31 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   animation: change 10s infinite ; /* Shorter duration for sharper change */
 }
-@keyframes change{
-  0%,20%{
-    background-image: url(fash.jpg);
+@keyframes change {
+  0%, 20% {
+      background-image: url(fash.jpg);
+      opacity: 1; /* Start fully visible */
   }
-  25%,45%{
-    background-image: url(img.jpg);
-
+  25%, 45% {
+      background-image: url(img.jpg);
+      opacity: 1; 
   }
-  50%,70%{
-    background-image: url(img3.jpg);
-  
+  50%, 70% {
+      background-image: url(img3.jpg);
+      opacity: 1; 
   }
-  75%,95%{
-    background-image: url(img2.jpg);
-    
+  75%, 95% {
+      background-image: url(img2.jpg);
+      opacity: 1; 
   }
-  100%{
-    background-image: url(fash.jpg);
+  100% {
+      background-image: url(fash.jpg);
+      opacity: 1; 
   }
 }
 #subheader button {
@@ -162,7 +163,7 @@ h2,
 h1,
 p,
 button {
-  color: rgb(78, 61, 7);
+  color: rgb(14, 11, 0);
   margin: 0px 50px;
 }
 #jewelry-grid {

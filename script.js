@@ -45,6 +45,16 @@ function displayImages(data) {
 
 // Call the function to fetch and display images
 fetchRandomJewelryImages();
+function preloadImages(urls) {
+    urls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+    });
+}
+
+// Preload your images
+preloadImages(['fash.jpg', 'img.jpg', 'img3.jpg', 'img2.jpg']);
+
 let tl=gsap.timeline()
 tl.from("#header img",{
     y:-30,
@@ -57,3 +67,27 @@ tl.from("#navbar li",{
     opacity:0,
     stagger:0.5
 })
+// GSAP Animation for Subheader
+let tl2=gsap.timeline()
+tl2.from("#subheader h1", {
+    opacity: 0,
+    y: -150, // Slightly move up
+    duration: 1, // Duration of the animation
+    delay: 1.5, // Delay before it starts
+});
+tl2.from("#subheader h2", {
+    opacity: 0,
+    y: -150,
+});
+tl2.from("#subheader h4", {
+    opacity: 0,
+    y: -150,
+});
+tl2.from("#subheader button", {
+    opacity: 0,
+    y: 40,
+});
+tl2.from("#subheader p", {
+    opacity: 0,
+    y: -150,
+});
