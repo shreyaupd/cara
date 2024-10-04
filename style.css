@@ -391,4 +391,41 @@ button {
 .footer-col .icons i:hover  {
   color: #fff;
 }
-
+#subheader_shop {
+  height: 800px;
+  width: 100%;
+  background-image: url(jewl.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  animation: changes 10s infinite ; /* Shorter duration for sharper change */
+}
+@keyframes changes {
+  0%, 33% {
+      background-image: url(jewl.jpg);
+      opacity: 1; /* Start fully visible */
+  }
+  60%,80%  {
+      background-image: url(jewl2.jpg);
+      opacity: 1; 
+  }
+  85%,100% {
+      background-image: url(jewl.jpg);
+      opacity: 1; 
+  }
+}
+#myjewl h2{
+  text-align: center;
+  color: #6b6565;
+}
+#category-grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+  justify-items: center; /* Center items within each grid cell */
+  align-items: center; /* Center items vertically */
+}
