@@ -1,10 +1,7 @@
-const accessKey = ''; // Make sure to put your API key here
+const accessKey = 'qeZXia_hV-e0jTVP6VosYPiKBTXZGk_PiMesFpFcRpA'; // Make sure to put your API key here
 const jewelryGrid = document.getElementById('jewelry-grid');
 const localStorageKey = 'jewelryImages'; // Key for localStorage
-const ringDiv = document.getElementById('ring');
-const earringDiv = document.getElementById('earring');
-const braceletDiv = document.getElementById('bracelet');
-const necklaceDiv = document.getElementById('necklace');
+
 async function fetchRandomJewelryImages() {
     // Check if images are already in localStorage
     const cachedImages = localStorage.getItem(localStorageKey);
@@ -28,38 +25,7 @@ async function fetchRandomJewelryImages() {
         }
     }
 }
-function categorizeAndDisplayImages(data) {
-    // Clear the divs before adding new items
-    ringDiv.innerHTML = '';
-    earringDiv.innerHTML = '';
-    braceletDiv.innerHTML = '';
-    necklaceDiv.innerHTML = '';
 
-    // Loop through each image and categorize them based on keywords
-    data.forEach(image => {
-        const item = document.createElement('div');
-        item.classList.add('jewelry-item');
-        
-        const img = document.createElement('img');
-        img.src = image.urls.small;
-        img.alt = image.alt_description || 'Jewelry';
-        
-        item.appendChild(img);
-
-        // Categorize based on keywords in the alt description or tags
-        const description = (image.alt_description || '').toLowerCase();
-        
-        if (description.includes('ring')) {
-            ringDiv.appendChild(item); // Add to ring section
-        } else if (description.includes('earring')) {
-            earringDiv.appendChild(item); // Add to earring section
-        } else if (description.includes('bracelet')) {
-            braceletDiv.appendChild(item); // Add to bracelet section
-        } else if (description.includes('necklace')) {
-            necklaceDiv.appendChild(item); // Add to necklace section
-        }
-    });
-}
 function displayImages(data) {
     // Clear the grid before adding new items
     jewelryGrid.innerHTML = '';
@@ -79,25 +45,16 @@ function displayImages(data) {
 
 // Call the function to fetch and display images
 fetchRandomJewelryImages();
-
 function preloadImages(urls) {
     urls.forEach(url => {
         const img = new Image();
         img.src = url;
     });
 }
-
 // Preload your images
-preloadImages(['fash.jpg', 'img.jpg', 'img3.jpg', 'img2.jpg','jewl.jpg','jewl2.jpg']);
-
+preloadImages(['fash.jpg', 'img.jpg', 'img3.jpg', 'img2.jpg']);
 let tl=gsap.timeline()
 tl.from("#header img",{
-    y:-30,
-    opacity:0,
-    duration:0.7,
-    delay:1,
-})
-tl.from("#navbar li",{
     y:-30,
     opacity:0,
     stagger:0.5

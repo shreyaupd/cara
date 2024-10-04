@@ -421,11 +421,17 @@ button {
   text-align: center;
   color: #6b6565;
 }
-#category-grid2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Space between grid items */
-  padding: 20px; /* Padding around the grid */
-  justify-items: center; /* Center items within each grid cell */
-  align-items: center; /* Center items vertically */
+#jewelry-grid{
+  margin-bottom: 30px;
+}
+#cat {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align items */
+  background-color: white; /* Background color for each category item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden; /* Ensure rounded corners are applied to child elements */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
