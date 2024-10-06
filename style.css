@@ -105,7 +105,7 @@ body {
 }
 
 #subheader {
-  height: 800px;
+  height: 900px;
   width: 100%;
   background-image: url(fash.jpg);
   background-position: center;
@@ -404,36 +404,34 @@ button {
   animation: changes 10s infinite ; /* Shorter duration for sharper change */
 }
 @keyframes changes {
-  0%, 33% {
-      background-image: url(jewl.jpg);
-      opacity: 1; /* Start fully visible */
-  }
-  60%,80%  {
-      background-image: url(jewl2.jpg);
-      opacity: 1; 
-  }
-  85%,100% {
-      background-image: url(jewl.jpg);
-      opacity: 1; 
-  }
+  0%, 20% {
+    background-image: url(jewl.jpg);
+    opacity: 1; /* Start fully visible */
 }
+25%, 45% {
+    background-image: url(jewll2.jpg);
+    opacity: 1; 
+}
+50%, 70% {
+    background-image: url(jewl3.jpeg);
+    opacity: 1; 
+}
+75%, 95% {
+    background-image: url(jewl4.jpg);
+    opacity: 1; 
+}
+100% {
+    background-image: url(jewl.jpg);
+    opacity: 1; 
+}
+}
+
 #myjewl h2{
   text-align: center;
   color: #6b6565;
 }
 #jewelry-grid{
   margin-bottom: 30px;
-}
-#cat {
-  display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center align items */
-  background-color: white; /* Background color for each category item */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  overflow: hidden; /* Ensure rounded corners are applied to child elements */
-  transition: transform 0.3s; /* Smooth transition for hover effect */
-  cursor: pointer; /* Change cursor to pointer on hover */
 }
 #featuredproduct h1{
   padding: 30px;
@@ -504,3 +502,110 @@ color: rgb(14, 113, 9);
   bottom: 20px;
   right: 10px;
 }
+#next{
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  
+}
+#next a{
+text-decoration: none;
+background-color: #e5f3c5;
+padding: 15px 20px;
+border-radius: 4px;
+color: black;
+font-weight: 600;
+}
+
+
+#size-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Adjust width as needed */
+  max-width: 200px; /* Limit max width */
+}
+#productdetails {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  display: flex; /* Use flexbox for better layout control */
+  margin: 10px; /* Add margin to the section itself for spacing */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#details {
+  width: 40%;
+  margin-left: 100px; /* Space between image and description */
+ margin-right: -50px;
+ margin-top: 40px;
+ margin-bottom: 30px;
+}
+
+.productdescription {
+  margin-top: 60px;
+  flex: 1; /* Allow the description to take available space */
+}
+
+input[type="number"] {
+  margin-right: 10px; /* Margin to the right of the number input */
+}
+#productdetails h5{
+  font-size: 26px;
+}
+#productdetails h2{
+  margin: 0;
+  font-size: 26px;
+}
+#productdetails h4{
+  padding: 10px 0 2px 0;
+}
+#productdetails #pdetails{
+  width: 90%;
+  padding-top: 20px;
+}
+#productdetails #size-select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 7px;
+}
+#num-select {
+  width: 60px; /* Set a fixed width for consistency */
+  padding: 10px;
+  border: 2px solid #d1d1d1;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px; /* Space between input and button */
+}
+#num-select::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button;
+  opacity: 1; /* Ensure visibility of the spinner arrow */
+}
+#num-select:focus {
+  border-color: #010101; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 183, 255, 0.5); /* Shadow effect on focus */
+}
+button {
+  margin: 0;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 47px; /* Fixed width for buttons */
+}
+button:hover {
+  background-color: #ccc59c; /* Darken button on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+#productdetails input{
+ width: 70px;
+ height: 47px;
+}
+
+

@@ -45,6 +45,14 @@ function displayImages(data) {
 
 // Call the function to fetch and display images
 fetchRandomJewelryImages();
+
+const sizeSelect=document.getElementById('size-select');
+for(let i=1;i<=100;i++){
+    const option=document.createElement('option');
+    option.value=i;
+    option.textContent=i;
+    sizeSelect.appendChild(option);
+}
 function preloadImages(urls) {
     urls.forEach(url => {
         const img = new Image();
@@ -52,7 +60,7 @@ function preloadImages(urls) {
     });
 }
 // Preload your images
-preloadImages(['fash.jpg', 'img.jpg', 'img3.jpg', 'img2.jpg']);
+preloadImages(['fash.jpg', 'img.jpg', 'img3.jpg', 'img2.jpg','jewl.jpg','jewll2.jpg','jewl3.jpeg','jewl4.jpg']);
 let tl=gsap.timeline()
 tl.from("#header img",{
     y:-30,
