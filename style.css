@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -64,10 +64,12 @@ body {
   position: sticky;
   top: 0px;
 }
-#header img{
+
+#header img {
   height: 65px;
-   margin-left: 10px;
+  margin-left: 10px;
 }
+
 #navbar {
   display: flex;
   justify-content: center;
@@ -86,6 +88,17 @@ body {
   font-weight: 550;
   color: #6b6565;
   transition: 0.3s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  margin-top: -45px;
 }
 
 #navbar li a:hover,
@@ -114,30 +127,42 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  animation: change 10s infinite ; /* Shorter duration for sharper change */
+  animation: change 10s infinite;
+  /* Shorter duration for sharper change */
 }
+
 @keyframes change {
-  0%, 20% {
-      background-image: url(fash.jpg);
-      opacity: 1; /* Start fully visible */
+  0%,
+  20% {
+    background-image: url(fash.jpg);
+    opacity: 1;
+    /* Start fully visible */
   }
-  25%, 45% {
-      background-image: url(img.jpg);
-      opacity: 1; 
+
+  25%,
+  45% {
+    background-image: url(img.jpg);
+    opacity: 1;
   }
-  50%, 70% {
-      background-image: url(img3.jpg);
-      opacity: 1; 
+
+  50%,
+  70% {
+    background-image: url(img3.jpg);
+    opacity: 1;
   }
-  75%, 95% {
-      background-image: url(img2.jpg);
-      opacity: 1; 
+
+  75%,
+  95% {
+    background-image: url(img2.jpg);
+    opacity: 1;
   }
+
   100% {
-      background-image: url(fash.jpg);
-      opacity: 1; 
+    background-image: url(fash.jpg);
+    opacity: 1;
   }
 }
+
 #subheader button {
   margin-top: 30px;
   display: flex;
@@ -166,28 +191,36 @@ button {
   color: rgb(14, 11, 0);
   margin: 0px 50px;
 }
+
 #jewelry-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px; /* Space between grid items */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  gap: 10px;
+  /* Space between grid items */
+  padding: 20px;
+  /* Padding around the grid */
   padding-bottom: 0px;
 }
-#belowf{
+
+#belowf {
   margin-top: 0px;
   padding-top: 0px;
-  height:700px;
+  height: 700px;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-#feedback{
+
+#feedback {
   padding-top: 30px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
+
 #midimg {
   margin-top: -230px;
-  margin-bottom: 0px; /* Removed excess space below the image */
+  margin-bottom: 0px;
+  /* Removed excess space below the image */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +231,8 @@ button {
 }
 
 #fromcostomer {
-  margin-top: 50px; /* Reduced this to bring the text closer */
+  margin-top: 50px;
+  /* Reduced this to bring the text closer */
   margin-left: 30px;
 }
 
@@ -220,12 +254,14 @@ button {
 
 #costomer {
   position: relative;
-  top: -500px; /* Adjusted to position correctly relative to #midimg */
+  top: -500px;
+  /* Adjusted to position correctly relative to #midimg */
   margin-right: 60px;
   margin-left: auto;
   width: 300px;
   text-align: right;
-  margin-bottom: 0px; /* Ensures no extra space below the customer section */
+  margin-bottom: 0px;
+  /* Ensures no extra space below the customer section */
 }
 
 #costomer p {
@@ -244,79 +280,113 @@ button {
   color: #222;
   margin-right: 120px;
 }
+
 .jewelry-item {
-  position: relative; /* For positioning purposes */
-  overflow: hidden; /* Ensures content does not overflow */
-  border-radius: 8px; /* Optional: rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
-  height: 200px; /* Fixed height for each item */
+  position: relative;
+  /* For positioning purposes */
+  overflow: hidden;
+  /* Ensures content does not overflow */
+  border-radius: 8px;
+  /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: shadow effect */
+  height: 200px;
+  /* Fixed height for each item */
 }
 
 .jewelry-item img {
-  width: 100%; /* Make the image take the full width */
-  height: 100%; /* Make the image take the full height of the container */
-  object-fit: cover; /* Cover the area, maintain aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-  transition: transform 0.3s; /* Smooth transition for hover effect */
+  width: 100%;
+  /* Make the image take the full width */
+  height: 100%;
+  /* Make the image take the full height of the container */
+  object-fit: cover;
+  /* Cover the area, maintain aspect ratio */
+  border-radius: 8px;
+  /* Optional: rounded corners */
+  transition: transform 0.3s;
+  /* Smooth transition for hover effect */
 }
 
 .jewelry-item img:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
+  /* Zoom effect on hover */
 }
-#myjewl{
+
+#myjewl {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
   background-size: 100%;
- background-position: center;
- background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#myjewl h1{
+
+#myjewl h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
 }
+
 #category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Space between grid items */
-  padding: 20px; /* Padding around the grid */
-  justify-items: center; /* Center items within each grid cell */
-  align-items: center; /* Center items vertically */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  gap: 20px;
+  /* Space between grid items */
+  padding: 20px;
+  /* Padding around the grid */
+  justify-items: center;
+  /* Center items within each grid cell */
+  align-items: center;
+  /* Center items vertically */
 }
 
 .category-item {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center align items */
-  background-color: white; /* Background color for each category item */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  overflow: hidden; /* Ensure rounded corners are applied to child elements */
-  transition: transform 0.3s; /* Smooth transition for hover effect */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  flex-direction: column;
+  /* Stack image and text vertically */
+  align-items: center;
+  /* Center align items */
+  background-color: white;
+  /* Background color for each category item */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow effect */
+  overflow: hidden;
+  /* Ensure rounded corners are applied to child elements */
+  transition: transform 0.3s;
+  /* Smooth transition for hover effect */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }
 
 .category-item img {
-  width: 100%; /* Make the image take the full width */
-  height: auto; /* Allow height to scale proportionally */
-  object-fit: cover; /* Cover the area, maintain aspect ratio */
+  width: 100%;
+  /* Make the image take the full width */
+  height: auto;
+  /* Allow height to scale proportionally */
+  object-fit: cover;
+  /* Cover the area, maintain aspect ratio */
 }
 
 .category-item h4 {
-  margin: 10px 0; /* Spacing between image and text */
-  font-size: 20px; /* Font size for category titles */
+  margin: 10px 0;
+  /* Spacing between image and text */
+  font-size: 20px;
+  /* Font size for category titles */
 }
 
 .category-item:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
+  /* Zoom effect on hover */
 }
-
 
 .footer {
   width: 100%;
-  background: #10182F;
+  background: #10182f;
   border-radius: 6px;
 }
+
 .footer .footer-row {
   display: flex;
   flex-wrap: wrap;
@@ -324,49 +394,59 @@ button {
   gap: 3.5rem;
   padding: 60px;
 }
+
 .footer-row .footer-col h4 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 400;
 }
+
 .footer-col .links {
   margin-top: 20px;
 }
+
 .footer-col .links li {
   list-style: none;
   margin-bottom: 10px;
 }
+
 .footer-col .links li a {
   text-decoration: none;
   color: #bfbfbf;
 }
+
 .footer-col .links li a:hover {
   color: #fff;
 }
+
 .footer-col p {
   margin: 20px 0;
   color: #bfbfbf;
   max-width: 300px;
 }
+
 .footer-col form {
   display: flex;
   gap: 5px;
 }
+
 .footer-col input {
   height: 40px;
   border-radius: 6px;
   background: none;
   width: 100%;
   outline: none;
-  border: 1px solid #7489C6 ;
+  border: 1px solid #7489c6;
   caret-color: #fff;
   color: #fff;
   padding-left: 10px;
 }
+
 .footer-col input::placeholder {
   color: #ccc;
 }
- .footer-col form button {
+
+.footer-col form button {
   background: #fff;
   outline: none;
   border: none;
@@ -376,21 +456,26 @@ button {
   font-weight: 500;
   transition: 0.2s ease;
 }
+
 .footer-col form button:hover {
   background: #cecccc;
 }
+
 .footer-col .icons {
   display: flex;
   margin-top: 30px;
   gap: 30px;
   cursor: pointer;
 }
+
 .footer-col .icons i {
   color: #afb6c7;
 }
-.footer-col .icons i:hover  {
+
+.footer-col .icons i:hover {
   color: #fff;
 }
+
 #subheader_shop {
   height: 800px;
   width: 100%;
@@ -401,45 +486,59 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  animation: changes 10s infinite ; /* Shorter duration for sharper change */
-}
-@keyframes changes {
-  0%, 20% {
-    background-image: url(jewl.jpg);
-    opacity: 1; /* Start fully visible */
-}
-25%, 45% {
-    background-image: url(jewll2.jpg);
-    opacity: 1; 
-}
-50%, 70% {
-    background-image: url(jewl3.jpeg);
-    opacity: 1; 
-}
-75%, 95% {
-    background-image: url(jewl4.jpg);
-    opacity: 1; 
-}
-100% {
-    background-image: url(jewl.jpg);
-    opacity: 1; 
-}
+  animation: changes 10s infinite;
+  /* Shorter duration for sharper change */
 }
 
-#myjewl h2{
+@keyframes changes {
+  0%,
+  20% {
+    background-image: url(jewl.jpg);
+    opacity: 1;
+    /* Start fully visible */
+  }
+
+  25%,
+  45% {
+    background-image: url(jewll2.jpg);
+    opacity: 1;
+  }
+
+  50%,
+  70% {
+    background-image: url(jewl3.jpeg);
+    opacity: 1;
+  }
+
+  75%,
+  95% {
+    background-image: url(jewl4.jpg);
+    opacity: 1;
+  }
+
+  100% {
+    background-image: url(jewl.jpg);
+    opacity: 1;
+  }
+}
+
+#myjewl h2 {
   text-align: center;
   color: #6b6565;
 }
-#jewelry-grid{
+
+#jewelry-grid {
   margin-bottom: 30px;
 }
-#featuredproduct h1{
+
+#featuredproduct h1 {
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#featuredproduct h2{
+
+#featuredproduct h2 {
   font-size: 50px;
   color: #ebbd84;
   padding-top: 30px;
@@ -447,50 +546,59 @@ button {
   justify-content: center;
   align-items: center;
 }
-#featuredproduct{
+
+#featuredproduct {
   margin: 0px;
   padding: 0px;
-  background-color:#ece9df;
+  background-color: #ece9df;
 }
-#featuredproduct .pro-container{
+
+#featuredproduct .pro-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-#featuredproduct .pro{
+
+#featuredproduct .pro {
   margin: 80px 10px;
   width: 30%;
-  min-width:250px;
+  min-width: 250px;
   padding: 40px 12px;
   border: none;
   background-color: hsl(180, 7%, 97%);
-  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   cursor: pointer;
   transition: 0.45s ease-in-out;
-  position:relative;
+  position: relative;
 }
-#featuredproduct .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+
+#featuredproduct .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   transform: translateY(-9px);
 }
-#featuredproduct .pro img{
+
+#featuredproduct .pro img {
   width: 100%;
   border-radius: 1px;
 }
+
 #featuredproduct .pro {
   margin-bottom: 0px;
   line-height: 25px;
   font-size: 20px;
   text-align: center;
 }
-#featuredproduct .pro .des h4{
-color: rgb(14, 113, 9);
+
+#featuredproduct .pro .des h4 {
+  color: rgb(14, 113, 9);
 }
-#featuredproduct .pro .des .star{
+
+#featuredproduct .pro .des .star {
   color: rgb(237, 227, 45);
 }
-#featuredproduct .pro .cart{
+
+#featuredproduct .pro .cart {
   width: 70px;
   height: 50px;
   line-height: 40px;
@@ -502,94 +610,116 @@ color: rgb(14, 113, 9);
   bottom: 20px;
   right: 10px;
 }
-#next{
+
+#next {
   margin-top: 20px;
   position: relative;
   display: flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
-  
-}
-#next a{
-text-decoration: none;
-background-color: #e5f3c5;
-padding: 15px 20px;
-border-radius: 4px;
-color: black;
-font-weight: 600;
 }
 
+#next a {
+  text-decoration: none;
+  background-color: #e5f3c5;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: black;
+  font-weight: 600;
+}
 
 #size-select {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; /* Adjust width as needed */
-  max-width: 200px; /* Limit max width */
+  width: 100%;
+  /* Adjust width as needed */
+  max-width: 200px;
+  /* Limit max width */
 }
+
 #productdetails {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  display: flex; /* Use flexbox for better layout control */
-  margin: 10px; /* Add margin to the section itself for spacing */
+  display: flex;
+  /* Use flexbox for better layout control */
+  margin: 10px;
+  /* Add margin to the section itself for spacing */
   margin-left: 50px;
   margin-right: 50px;
 }
 
 #details {
   width: 40%;
-  margin-left: 100px; /* Space between image and description */
- margin-right: -50px;
- margin-top: 40px;
- margin-bottom: 30px;
+  margin-left: 100px;
+  /* Space between image and description */
+  margin-right: -50px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .productdescription {
   margin-top: 60px;
-  flex: 1; /* Allow the description to take available space */
+  flex: 1;
+  /* Allow the description to take available space */
 }
 
 input[type="number"] {
-  margin-right: 10px; /* Margin to the right of the number input */
+  margin-right: 10px;
+  /* Margin to the right of the number input */
 }
-#productdetails h5{
+
+#productdetails h5 {
   font-size: 26px;
 }
-#productdetails h2{
+
+#productdetails h2 {
   margin: 0;
   font-size: 26px;
 }
-#productdetails h4{
+
+#productdetails h4 {
   padding: 10px 0 2px 0;
 }
-#productdetails #pdetails{
+
+#productdetails #pdetails {
   width: 90%;
   padding-top: 20px;
 }
-#productdetails #size-select{
+
+#productdetails #size-select {
   display: block;
   padding: 5px 10px;
   margin-bottom: 7px;
 }
+
 #num-select {
-  width: 60px; /* Set a fixed width for consistency */
+  width: 60px;
+  /* Set a fixed width for consistency */
   padding: 10px;
   border: 2px solid #d1d1d1;
   border-radius: 4px;
   transition: border-color 0.3s, box-shadow 0.3s;
   font-size: 16px;
   outline: none;
-  margin-right: 10px; /* Space between input and button */
+  margin-right: 10px;
+  /* Space between input and button */
 }
+
 #num-select::-webkit-inner-spin-button {
   -webkit-appearance: inner-spin-button;
-  opacity: 1; /* Ensure visibility of the spinner arrow */
+  opacity: 1;
+  /* Ensure visibility of the spinner arrow */
 }
+
 #num-select:focus {
-  border-color: #010101; /* Change border color on focus */
-  box-shadow: 0 0 5px rgba(0, 183, 255, 0.5); /* Shadow effect on focus */
+  border-color: #010101;
+  /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
+  /* Shadow effect on focus */
 }
+
 button {
   margin: 0;
   border: none;
@@ -597,15 +727,349 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  height: 47px; /* Fixed width for buttons */
+  height: 47px;
+  /* Fixed width for buttons */
 }
+
 button:hover {
-  background-color: #ccc59c; /* Darken button on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-}
-#productdetails input{
- width: 70px;
- height: 47px;
+  background-color: #ccc59c;
+  /* Darken button on hover */
+  transform: translateY(-2px);
+  /* Slight lift effect */
 }
 
+#productdetails input {
+  width: 70px;
+  height: 47px;
+}
 
+@media (max-width: 900px) {
+  #header {
+    flex-direction: column;
+    /* Stack items vertically */
+    padding: 15px;
+    /* Reduce padding */
+  }
+
+  #navbar {
+    flex-direction: column;
+    /* Stack navbar items vertically */
+    align-items: center;
+    /* Center items */
+    max-height: 0;
+    /* Initially hide */
+    display: none;
+    /* Hide the navbar initially */
+  }
+
+  #navbar.active {
+    display: flex;
+    /* Show navbar when active */
+    max-height: 500px;
+    /* Expand when active */
+  }
+
+  #navbar li {
+    padding: 10px;
+    /* Adjust padding for list items */
+  }
+
+  #navbar li a {
+    font-size: 16px;
+    /* Smaller font size */
+  }
+
+  #header img {
+    height: 50px;
+    /* Smaller logo height */
+  }
+
+  .menu-icon {
+    display: block;
+    /* Show the hamburger icon on small screens */
+  }
+
+  #category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 15px;
+    /* Slightly smaller gap */
+    padding: 10px;
+    /* Less padding */
+  }
+
+  #myjewl h1 {
+    padding: 30px;
+    /* Less padding */
+    font-size: 1.8em;
+    /* Adjust font size */
+  }
+
+  .category-item h4 {
+    font-size: 18px;
+    /* Slightly smaller font size */
+  }
+
+  #midimg img {
+    height: 400px;
+    /* Adjust image height for smaller screens */
+  }
+
+  #fromcostomer {
+    margin-left: 20px;
+    /* Less margin */
+  }
+
+  #fromcostomer h2,
+  #costomer h2,
+  #costomer h4 {
+    font-size: 1.5em;
+    /* Adjust font size */
+  }
+
+  #costomer {
+    width: 250px;
+    /* Narrower width */
+    margin-right: 40px;
+    /* Less margin */
+    top: -450px;
+    /* Adjust positioning */
+    text-align: center;
+    /* Center align text for smaller screens */
+  }
+
+  #costomer p {
+    font-size: 0.9em;
+    /* Smaller font size */
+  }
+  #midimg {
+    position: relative;
+  }
+  #midimg img {
+    height: 380px;
+    width: 270px;
+  }
+  #feedback h1 {
+    font-size: 25px;
+  }
+  #fromcostomer h2 {
+    margin-left: -10px;
+  }
+  #fromcostomer p {
+    margin-left: -5px;
+    max-width: 50px;
+  }
+  #costomer p {
+    margin-top: 50px;
+    margin-left: 90px;
+    width: 150px;
+    line-height: 19px;
+  }
+  #costomer h2 {
+    margin-left: 90px;
+  }
+  #costomer h4 {
+    margin-left: 95px;
+  }
+  #productdetails {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #details img {
+    margin-left: -70px;
+    margin-top: 50px;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+  }
+
+  #productdetails .productdescription {
+    margin-top: 10px;
+    
+    padding-left: -100px;
+    width: 100%;
+  }
+
+  button, #size-select, #num-select {
+    max-width: 220px;
+  }
+
+  #pdetails h4 {
+    font-size: 10px;
+  }
+}
+
+/* Media query for screen widths 600px and below */
+@media (max-width: 600px) {
+#productdetails {
+    margin: 10px;
+    padding: 0;
+}
+
+#details {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.productdescription {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#productdetails h5 {
+    font-size: 20px;
+}
+
+#productdetails h2 {
+    font-size: 22px;
+}
+
+button {
+    width: 100%;
+    font-size: 14px;
+}
+
+#productdetails #size-select {
+    width: 100%;
+    padding: 5px;
+}
+
+#num-select {
+    width: 50px;
+}
+}
+
+@media (max-width: 600px) {
+  #header {
+    padding: 10px;
+    /* Further reduce padding */
+  }
+
+  #navbar li {
+    padding: 5px;
+    /* Adjust padding for smaller screens */
+  }
+
+  #navbar li a {
+    font-size: 14px;
+    /* Further reduce font size */
+  }
+
+  #header img {
+    height: 40px;
+    /* Further reduce logo height */
+  }
+
+  #category-grid {
+    grid-template-columns: 1fr;
+    /* 1 column */
+    gap: 10px;
+    /* Smaller gap */
+    padding: 5px;
+    /* Less padding */
+  }
+
+  #myjewl h1 {
+    padding: 20px;
+    /* Less padding */
+    font-size: 1.5em;
+    /* Smaller font size */
+  }
+
+  .category-item h4 {
+    font-size: 16px;
+    /* Smaller font size for mobile */
+  }
+  #midimg img {
+    height: 250px;
+    width: 200px;
+    margin-left: -100px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 700px;
+    padding-right: 20px;
+  }
+  #fromcostomer {
+    position: absolute;
+    margin-top: 300px;
+  }
+  #fromcostomer h2 {
+    margin-left: 12px;
+    padding: 0px;
+    margin-bottom: -15px;
+  }
+  #fromcostomer p {
+    margin-left: 0px;
+    line-height: 20px;
+    max-width: 90px;
+  }
+  #costomer {
+    position: relative;
+    top: 120px;
+    display: flex;
+    margin-left: 160px;
+    text-align: left;
+  }
+  #costomer p {
+    margin-top: 70px;
+  }
+  #costomer h2 {
+    display: none;
+  }
+  #costomer h4 {
+    display: none;
+  }
+  #featuredproduct h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 33px;
+    margin-bottom: -70px;
+  }
+  #featuredproduct .pro-container {
+    margin-left: 50px;
+  }
+
+  #productdetails {
+    margin: 10px;
+    padding: 0;
+  }
+
+  #details {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .productdescription {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #productdetails h5 {
+    font-size: 20px;
+  }
+
+  #productdetails h2 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #productdetails #size-select {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #num-select {
+    width: 50px;
+  }
+}

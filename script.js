@@ -2,6 +2,27 @@ const accessKey = 'qeZXia_hV-e0jTVP6VosYPiKBTXZGk_PiMesFpFcRpA'; // Make sure to
 const jewelryGrid = document.getElementById('jewelry-grid');
 const localStorageKey = 'jewelryImages'; // Key for localStorage
 
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active"); // Toggle the active class
+});
+
+// Get the current URL path
+const currentPath = window.location.pathname;
+
+// Get all the navbar links except the shopping bag icon
+const navLinks = document.querySelectorAll('#navbar li a'); // Get all links
+
+// Loop through the links and set the active class based on the current URL
+navLinks.forEach(link => {
+    if (link.href === window.location.href && !link.querySelector('.fa-bag-shopping')) {
+        link.classList.add('active'); // Add active class if the link matches the current URL
+    } else {
+        link.classList.remove('active'); // Remove active class for non-matching links
+    }
+});
+
+
 async function fetchRandomJewelryImages() {
     // Check if images are already in localStorage
     const cachedImages = localStorage.getItem(localStorageKey);
@@ -91,3 +112,4 @@ tl2.from("#subheader p", {
     opacity: 0,
     y: -150,
 });
+
